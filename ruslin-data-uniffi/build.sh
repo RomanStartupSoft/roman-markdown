@@ -5,7 +5,7 @@ set -e
 # https://github.com/godot-rust/gdnative/pull/920/files
 
 export ANDROID_HOME=$HOME/Android/Sdk
-export ANDROID_NDK_VERSION=25.2.9519653
+export ANDROID_NDK_VERSION=26.1.10909125
 
 export ANDROID_NDK_TOOLCHAIN_BIN=$ANDROID_HOME/ndk/$ANDROID_NDK_VERSION/toolchains/llvm/prebuilt/linux-x86_64/bin
 
