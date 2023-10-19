@@ -44,12 +44,12 @@ jobs:
         echo "ANDROID_NDK_VERSION=$EXPECTED_NDK_VERSION" >> $GITHUB_ENV
     - name: Build ruslin-data-uniffi
       working-directory: ./ruslin-data-uniffi
-#      ./release.sh arm64-v8a
-#      ./release.sh armeabi-v7a
-#      ./release.sh x86_64
-#      ./release.sh x86
+#        ./build.sh
       run: |
-        ./build.sh
+        ./release.sh arm64-v8a
+        ./release.sh armeabi-v7a
+        ./release.sh x86_64
+        ./release.sh x86
     - name: Print dir
       working-directory: ./uniffi/src/main/java/uniffi/ruslin
       run: |
